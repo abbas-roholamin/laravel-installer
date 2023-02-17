@@ -1,0 +1,17 @@
+#!/usr/bin/env php
+
+<?php
+
+use Laravel\Installer\Console\newCommand;
+use Symfony\Component\Console\Application;
+
+require __DIR__.'/vendor/autoload.php';
+
+
+$client = new GuzzleHttp\Client();
+
+$app = new Application();
+
+$app->add(new newCommand($client));
+
+$app->run();

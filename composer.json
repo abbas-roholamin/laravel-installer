@@ -1,0 +1,21 @@
+{
+  "name": "abbas-roholamin/laravel-installer",
+  "description": "re-create laravel installer package",
+  "type": "package",
+  "require": {
+    "symfony/console": "^6.2",
+    "guzzlehttp/guzzle": "^7.5"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "Laravel\\Installer\\Console\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Abbas Roholamin",
+      "email": "abbasroholamin76@gmail.com"
+    }
+  ]
+}
